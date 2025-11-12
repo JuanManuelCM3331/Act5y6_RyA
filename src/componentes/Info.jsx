@@ -1,13 +1,16 @@
-function PersonalInfo(){
+import React from 'react';
+
+function Info({ nombre, cargo, ubicacion, descripcion }) {
   return (
-    <section>
-      <h3>Información Personal</h3>
-      <ul>
-        <li>Juanma3331@gmail.com</li>
-        <li>+57 312 864 7249</li>
-        <li>Itagui, Antioquia, Colombia</li>
-      </ul>
+    <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
+      <h1>{nombre}</h1>
+      <h2 style={{ color: '#555' }}>{cargo}</h2>
+      <p>{ubicacion}</p>
+      <p style={{ maxWidth: '600px', margin: '0 auto', color: '#777' }}>
+        {descripcion}
+      </p>
     </section>
-  )
+  );
 }
-export default PersonalInfo
+
+export default Info;
