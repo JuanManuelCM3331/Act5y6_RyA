@@ -1,9 +1,9 @@
-function Header() {
+function Header({ nombre, cargo }) {
   return (
     <header>
-      <h1>Juan Manuel Cardona Molina</h1>
-      <h2>Desarrollador Web Frontend</h2>
+      <h1>{nombre}</h1>
+      <h2>{cargo}</h2>
     </header>
-  )
+  );
 }
-export default Header
+export default Header;
